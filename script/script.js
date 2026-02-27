@@ -2,7 +2,7 @@
 const recipientName = "Buddy";
 const senderName = "Your Friend";
 // Set birthday target in local time: YYYY-MM-DDTHH:mm:ss
-const birthdayTargetISO = "2026-02-2711:46:00";
+const birthdayTargetISO = "2026-02-28T00:00:00";
 
 // ========= DOM ELEMENTS =========
 const screens = document.querySelectorAll(".screen");
