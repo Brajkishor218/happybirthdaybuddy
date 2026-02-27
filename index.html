@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Happy Birthday Buddy 😺🥳</title>
+        <!--tab icon-->
+        <link rel="icon" type="image/x-icon" href="images/rel icon.jpeg" />
+
+        <!-- Link to CSS -->
+        <link rel="stylesheet" href="style/style.css" />
+    </head>
+
+    <body>
+        <div id="countdown-overlay" class="countdown-overlay" aria-hidden="true">
+            <div id="countdown-panel" class="countdown-panel">
+                <div class="countdown-block">
+                    <span id="countdown-days" class="countdown-value">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-block">
+                    <span id="countdown-hours" class="countdown-value">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-block">
+                    <span id="countdown-minutes" class="countdown-value">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-block">
+                    <span id="countdown-seconds" class="countdown-value">03</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== Background Music (Optional) ===== -->
+              <!-- TODO: Put your own mp3 file in the same folder and change the file name below -->
+        <audio id="bg-music" loop>
+          <source src="music/buddy birthday song.mpeg" type="audio/mpeg" />
+          <!-- If music is not playing, check file name & browser support -->
+        </audio>
+
+        <div class="app-wrapper">
+            <!-- ===== Step 1 : Welcome Screen ===== -->
+            <section class="screen screen-1 active">
+                <div class="card">
+                    <!-- TODO: Change name here -->
+                    <h1>
+                        Happy B'day  <span id="recipient-name-title">cuitie</span> 🎉
+                    </h1>
+
+                    <!-- TODO: Change this short welcome line -->
+                    <p class="subtitle">
+                        I have a small surprise prepared just for you...
+                    </p>
+
+                    <!-- TODO: Optional hero image / photo -->
+                    <!-- Replace "birthday-girl.jpg" with your own image file name -->
+                    <!-- Or delete the whole <img> tag if you don't want any image -->
+                    <div class="hero-image">
+                        <img id="hero-photo" class="expandable" src="images/Main.jpeg" alt="Birthday person " />
+                        <!-- ^^^ ADD YOUR PHOTO HERE -->
+                    </div>
+
+                    <button id="start-btn" align="right" class="primary-btn">
+                Chal abb thoda agee badh yhan click kar ke 🎁
+              </button>
+              <p class="hint" align="center">Happy birthday buddy 😺</p>
+                </div>
+            </section>
+
+            <!-- ===== Step 2 : Envelope Screen ===== -->
+            <section class="screen screen-2">
+                <div class="card center">
+                    <p class="step-label">Step 2 of 5</p>
+
+                    <div class="envelope" id="envelope">
+                        <div class="envelope-flap"></div>
+                        <div class="envelope-body"></div>
+                        <div class="envelope-letter">
+                            <!-- TODO: Change the small text visible on the letter -->
+                            <p>Wish padhne ke liye yhan dabaoo💌</p>
+                        </div>
+                       
+                    </div>
+
+                    <p class="hint">Happy birthday buddy 😺</p>
+                </div>
+            </section>
+
+            <!-- ===== Step 3 : Letter Screen ===== -->
+            <section class="screen screen-3">
+                <div class="card letter-card">
+                    <p class="step-label">Step 3 of 5</p>
+
+                    <!-- TODO: Change headline of the letter -->
+                    <h2 class="letter-title">To Buddy 😺</h2>
+
+                    <div class="letter">
+                        <!-- TODO: Write your own paragraphs / story / memories -->
+                        <p>
+                  Aaj Teraa special day hai, toh sabse pehle — Smile karo,
+                  kyunki aaj aap officially 1 year aurr badee ho jayegii 😊🤌
+                </p>
+
+                <p>
+                  Ek aur saal bada hone par congratulations 😌🎉 Don’t worry… tu
+                  abhi bhi “mentally 5 saal ki” hi hai 😂💗
+                </p>
+
+                <p>
+                  May your journey bloom with grace, and may you keep shining in
+                  your own gentle, and in powerful way. 🌺
+                </p>
+
+                <p>
+                  You are kind, funny, a little crazy and absolutely
+                  irreplaceable.💯
+                </p>
+
+                <p>
+                  ✨ May your this new year be filled with:
+                  <br />— Peace jo dil ko halka rakhe🙌 <br />— Success jo
+                  Tujhee aur strong banaye😇 <br />
+                  — Happiness jo kabhi kam na ho😊 <br />— Moments jo yaadgar
+                  ban jaayein🫠
+                </p>
+
+                <p>
+                  Today is your day. So I just wanted to remind you how loved
+                  you are ❤️‍🩹💞
+                </p>
+
+                <p>Tu meri best friend kam aur free ka stress zyada hai 🤪❤️</p>
+
+                <p>
+                  Tu na ho toh life boring ho jaaye… Aur tu ho toh life
+                  overacting se bhari 🤣🎂
+                </p>
+
+                <p>
+                  Hum ladte bhi hain, ek-dusre ko judge bhi karte hain 😌
+                  <br />Par bina baat kiye ek din bhi nahi reh paate 🥹 That’s
+                  us 🤍💝
+                </p>
+
+                <p>
+                  Thank you for being you. I’m so grateful to celebrate another
+                  year of your amazing existence. 🎂
+                </p>
+
+                <p>
+                  Buddy, truly, you make things better just by being there.
+                  Always stay strong, happy, and blessed byy god 🤗
+                </p>
+                    </div>
+
+
+                    <button id="to-celebration-btn" class="primary-btn">
+                Firsee thodaa aggeee badhaoo 🤗
+              </button>
+              <div> <p class="hint" align="center">Happy birthday buddy 😺</p></div>
+                </div>
+                
+                 
+            </section>
+
+            <!-- ===== Step 4 : Memories Screen ===== -->
+            <section class="screen screen-4">
+                <div class="card">
+                    <p class="step-label">Step 4 of 5</p>
+                    <h2 class="letter-title">Our Memories & Fun moments 📸</h2>
+
+                    <div class="memories-grid">
+                        <div class="memory-item"><img  class="memory-photo" src="images/mem 1.jpeg" alt="Memory 1" /></div>
+                        <div class="memory-item"><img  class="memory-photo" src="images/Mem 2.jpeg" alt="Memory 2" /></div>
+                        <div class="memory-item"><img  class="memory-photo" src="images/mem 7.jpeg" alt="Memory 3" /></div>
+                        <div class="memory-item"><img  class="memory-photo" src="images/mem 5.jpeg" alt="Memory 4" /></div>
+                        <div class="memory-item"><video autoplay loop muted class="memory-photo" src="videos/mem 5.mp4" alt="Memory 5" controls></video></div>
+                        <div class="memory-item"><video autoplay loop class="memory-photo" src="videos/Mem 6.mp4" alt="Memory 6" controls  ></video></div>
+                        <div class="memory-item"><img  class="memory-photo" src="images/Mem 3.jpeg" alt="Memory 7" /></div>
+                        <div class="memory-item"><img  class="memory-photo" src="images/Mem 4.jpeg" alt="Memory 8" /></div>
+                        <div class="memory-item"><img  class="memory-photo" src="images/mem 8.jpeg" alt="Memory 9" /></div>
+                        <div class="memory-item"><img  class="memory-photo" src="images/mem 10.png" alt="Memory 10" /></div>
+                    </div>
+
+                    
+
+                    <div style="text-align:center; margin-top:1rem;">
+                        <button id="to-final-btn" class="primary-btn">Cake koo bhii dekhh loo thdodaa  👀😝</button>
+                    </div>
+                    <div> <p class="hint" align="center">Happy birthday buddy 😺</p></div>
+                </div>
+            </section>
+
+            <!-- ===== Step 5 : Final Celebration Screen ===== -->
+            <section class="screen screen-5">
+                <div class="card celebration-card">
+                    <div class="aurora-bg" aria-hidden="true">
+                        <span class="aurora-wave aurora-wave-1"></span>
+                        <span class="aurora-wave aurora-wave-2"></span>
+                        <span class="aurora-wave aurora-wave-3"></span>
+                    </div>
+
+                    <!-- Confetti & balloons containers (JS will fill them) -->
+                    <div class="confetti-container"></div>
+                    <div class="balloon-container"></div>
+
+                    <!-- TODO: Change the big main greeting text -->
+                    <h2 id="main-greeting">
+                        Happy Birthday, <span id="recipient-name-main">buddy</span>! 🎉
+                    </h2>
+
+                    <!-- Typewriter text (JS will animate it) -->
+                    <!-- TODO: Change the sentence below if you want -->
+                    <p id="typewriter" data-text="May your day be full of laughter, love, cake and all your favorite things.">
+                        <!-- JS will type inside here -->
+                    </p>
+
+                    <!-- Cute cake (pure CSS) -->
+                    <div class="cake">
+                        <div class="layer layer-bottom"></div>
+                        <div class="layer layer-middle"></div>
+                        <div class="layer layer-top">
+                            <div class="plate"></div>
+                            <!-- Candle moved into the top layer so it can be centered reliably -->
+                            <div class="candle">
+                                <div class="flame"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TODO: Change final wish line -->
+                    <p class="final-wish">
+                        I hope this year brings you closer to your dreams than ever before. 💖
+                        <br /><br /> Aur haa candle jalna maat bhuliyoo 😁
+                        <br> (candle pe ak baar click karoo)🤗
+                    </p>
+                    <br />
+
+                    <!-- TODO: Change your name / nickname here -->
+                    <p class="signature">With lots of love, Byy your Bunny 🐇</p>
+
+                    <button id="replay-btn" class="secondary-btn">
+                Watch again 🔁
+              </button>
+              <div> <p class="hint" align="center"> Happy birthday buddy 😺</p></div>
+                </div>
+            </section>
+
+
+
+        </div>
+
+        <!-- Lightbox for expanding images (non-fullscreen) -->
+        <div id="lightbox" class="lightbox" aria-hidden="true">
+            <div class="lightbox-backdrop" tabindex="-1"></div>
+            <div class="lightbox-panel" role="dialog" aria-modal="true">
+                <button class="lightbox-close" aria-label="Close">×</button>
+                <img id="lightbox-img" src="" alt="Expanded photo" />
+            </div>
+        </div>
+
+        <!-- Link to JS -->
+        <script src="script/script.js"></script>
+    </body>
+
+    </html>
+</head>
+
+</html>
